@@ -27,7 +27,7 @@ public void SearchSolution() {
 }
 ````
 
-##The time complexity of this code is O(N)...##
+#The time complexity of this code is O(N)...
 
 In case you are wondering how the above time complexity was reached we carry out the asymptotic computational analysis. So let's calculate the time complexity of the above code.
 
@@ -54,7 +54,7 @@ for(int element : array){ //this loop has a time complexity of O(n)
 ```
 In the above code the for each loop has a linear time complexity of O(n) since the amount of time that it will take to loop through the number of elements to check if the number is 15 will be dependent in the number of elements in the array. ##Don't forget the loop is taken to be one statement so it has a cumulative complexity.##
 
-##Overall##
+#Overall
 ```
   int[] array = new int[15];  // this line has a  time complexity of O(1)
         Random random = new Random(); // this lina has a time complexity of O(1)
