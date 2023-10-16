@@ -4,7 +4,7 @@ This repository is ment to be a deep dive into the various data structures and a
 I'm not saying i'm the best but I am putting all my knowldege on this topic here...Contributions 
 are welcomed!!
 
-##the search problem in the array package
+**the search problem in the array package
 
 ```
 public void SearchSolution() {
@@ -27,7 +27,7 @@ public void SearchSolution() {
 }
 ````
 
-#The time complexity of this code is O(N)...
+**The time complexity of this code is O(N)...**
 
 In case you are wondering how the above time complexity was reached we carry out the asymptotic computational analysis. So let's calculate the time complexity of the above code.
 
@@ -52,9 +52,9 @@ for(int element : array){ //this loop has a time complexity of O(n)
             System.out.println(element) This line has a line comlexity of O(1)
         }
 ```
-In the above code the for each loop has a linear time complexity of O(n) since the amount of time that it will take to loop through the number of elements to check if the number is 15 will be dependent in the number of elements in the array. ##Don't forget the loop is taken to be one statement so it has a cumulative complexity.##
+In the above code the for each loop has a linear time complexity of O(n) since the amount of time that it will take to loop through the number of elements to check if the number is 15 will be dependent in the number of elements in the array. **Don't forget the loop is taken to be one statement so it has a cumulative complexity.**
 
-#Overall
+**Overall**
 ```
   int[] array = new int[15];  // this line has a  time complexity of O(1)
         Random random = new Random(); // this lina has a time complexity of O(1)
@@ -76,7 +76,7 @@ following the steps for the calculation using the rules of the asymptotic comput
 
 O(1) + O(1) + (O(N)+O(1)+O(1)) + (O(N)+O(1)+O(1))
 
-##Note that the ones in parenthesis are for calculating the cumulative complexity of the for loops which as we said before are considered to be one statement##
+**Note that the ones in parenthesis are for calculating the cumulative complexity of the for loops which as we said before are considered to be one statement**
 
 2O(1)+ (O(N)+2O(1)) + (O(N)+2O(1)) 
 
@@ -89,7 +89,7 @@ In the last step we will eleiminate the least domimant terms in the alogorithym.
 O(N)+ O(N) 
 
 2O(N)
-Elminate constants and we remain with ##O(N)##
+Elminate constants and we remain with **O(N)**
 
 
 
