@@ -26,8 +26,8 @@ public class search {
         for (int i = 0; i < array.length; i++) {
             int randomNumber = random.nextInt(20);
             array[i] = randomNumber;
-            System.out.println(array[i]);
         }
+               
         for(int element : array){
             if(element == 15){
                 System.out.println("the number 15 has been found here");
@@ -36,6 +36,7 @@ public class search {
         }
 
     }
+    
 
     public static void main(String[] args) {
         search s = new search();
