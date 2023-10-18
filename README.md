@@ -5,7 +5,7 @@ I'm not saying i'm the best but I am putting all my knowldege on this topic here
 are welcomed!!
 ---------------------------------------------------------------------------------------------------------------------------
 
-**the search problem in the array package**
+**the search problem in the array package(search.java)**
 
 ```
 public void SearchSolution() {
@@ -91,6 +91,41 @@ O(N)+ O(N)
 
 2O(N)
 Elminate constants and we remain with **O(N)**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**The target problem in the array package(Target.java)**
+In the problem that is being focus on here, one is given an array of elements and they are expected to go through the values in an array of numbers and find any two numbers in the array to that when added give the target.
+
+**This is an approach to solving the problem**
+```
+public class Target {
+
+    public void targetfinder(int[] num, int target) {
+        for (int i = 0; i < num.length; i++) {
+            for (int j = i + 1; j < num.length; j++) {
+                int evaluation = num[i] + num[j];
+                if (evaluation == target) {
+                    System.out.println("[" + num[i] + "," + num[j] + "]");
+                } else {
+//                    System.out.println("the target could not be reached");
+                    break;
+                }
+
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Target t = new Target();
+        int[] array = {1, 2, 3, 4};
+        int target = 7;
+        t.targetfinder(array, target);
+  
+    }
+
+}
+
+```
 
 
 
