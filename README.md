@@ -107,7 +107,7 @@ public class Target {
                 if (evaluation == target) {
                     System.out.println("[" + num[i] + "," + num[j] + "]");
                 } else {
-//                    System.out.println("the target could not be reached");
+                   System.out.println("the target could not be reached");
                     break;
                 }
 
@@ -126,7 +126,7 @@ public class Target {
 }
 
 ```
-
+In the above we can see that the function ``targetFinder`` is essencially one for loop hence there will not be addition of all the steps.Instead we multiply all the steps.
 
 
 
