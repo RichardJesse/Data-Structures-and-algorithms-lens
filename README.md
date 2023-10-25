@@ -128,6 +128,39 @@ public class Target {
 ```
 In the above we can see that the function ``targetFinder`` is essencially one for loop hence there will not be addition of all the steps.Instead we multiply all the steps.
 
+Let's get into it then. 
+
+```
+  public void targetfinder(int[] num, int target) {
+        for (int i = 0; i < num.length; i++) { // O(n)
+            for (int j = i + 1; j < num.length; j++) {  // O(n)
+                int evaluation = num[i] + num[j]; // O(1)
+                if (evaluation == target) {
+                    System.out.println("[" + num[i] + "," + num[j] + "]"); // O(1)
+                } else {
+                   System.out.println("the target could not be reached"); // O(1)
+                    break;
+                }
+
+            }
+        }
+    }
+```
+so for the above function we will work on the time complexity of the above following the step for the 
+computational complexity.
+
+So as we had said before their is only one statement so we are only calculating the time complexity from the fi statements to the 
+outer for loop. 
+ ( O(1) * O(1) * O(1) * O(N) * O(N) ) 
+ 
+ (O(1)* O(N^2))
+ **Incase you are wondering why we have O(1) it's simple because we have O(1) * O(1) * O(1) whose result is O(1^3) this is the same as O(1) 
+  since 1*1*1 is 1! **
+
+  After eliminating the non-domiant terms we remain with **O(N^2)** making the time complexity of the above quadratic. 
+  
+
+
 
 
 
